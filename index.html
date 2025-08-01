@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Simple Article Listing | devChallenges.io</title>
+
+   
+    <style>
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        color:#000000;
+      }
+
+      body {
+        height: 100vh;
+        padding:50px 200px;
+        background-color: #F8FAFC;
+      }
+
+      header img{
+        max-width: 100%;
+        height: auto;
+        display:block;
+        margin: 27px auto;
+        
+
+      }
+
+      .container{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: stretch;
+        gap: 30px;
+        border:none;
+        margin: 0 auto;
+        padding:0px 7px;
+        max-width: 750px; /*dk what both mean*/        
+      }
+
+      .card{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        border:none;
+        gap: 3.7rem;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        
+      }
+
+      .card img{
+        
+        border-radius: 15px;
+        border:none;
+        max-width: 100%;
+        width: auto;  
+        object-fit: contain;
+        
+      }
+
+      .minicard{
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+      h1{
+        font-size:2.25rem;
+        font-weight:600;
+        text-align:center;
+        line-height:3.0rem;
+        margin-left:0.5rem;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        word-spacing:0.005em;
+      }
+
+      h3{
+        font-size:1.25rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      h3 span{
+        display:block;
+      }
+      
+
+      p{
+        font-size:0.875rem;
+        font-weight:500;
+        color:#D9D9D9;
+        margin-top:10px;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+
+      @media screen and (max-width:640px){
+        header {
+        font-size: 20px;
+    }
+   
+    .article {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .article img {
+        width: 80%;
+        margin-right: 2rem;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
+      
+    </style>
+  </head>
+  <body>
+    
+      <header>
+      <h1>We release interesting articles about<br/> technology</h1>
+      <img src="./resources/Seperator.svg" alt="separator" style="padding:20px;"></header>
+
+      <section class="container">
+        <article class="card">
+          <img src="C:\Users\lenovo\Desktop\html-css\simple-article-listing-master\resources\photo_1.png" alt="cloud computing">
+
+          <div class="minicard">
+          <h3>Unlocking the Power of Cloud Computing: A Guide <span> to Scalable Solutions</span></h3>
+    
+          <p>November 12, 2024</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="C:\Users\lenovo\Desktop\html-css\simple-article-listing-master\resources\photo_3.png " alt="machine learning">
+          <div class="minicard">
+          <h3>The Future of AI: How Machine Learning is <br/>Revolutionizing Industries</h3>
+          <p>November 12, 2024</p>
+          </div>
+        </article>
+
+        <article class ="card">
+          <img src="C:\Users\lenovo\Desktop\html-css\simple-article-listing-master\resources\photo_2.png" alt="cube">
+          <div class="minicard">
+          <h3>The Impact of 5G on Business: How Faster Networks <span>are Transforming the Way We Work</span></h3>
+          <p>November 12, 2024</p>
+          </div>
+        </article>
+      </section>
+    
+          
+      
+    
+      
+
+    <div class="author-info">
+      Coded by <a href="#">Your Name Here</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
